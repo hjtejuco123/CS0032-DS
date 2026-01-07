@@ -643,3 +643,42 @@ Students should submit:
 4. **Presentation** 
    - 10-15 slide deck summarizing key findings
    - Focus on security vulnerabilities found and business insights
+  
+
+### Recommended Reading
+
+- **PHP Security**: OWASP Top 10 Web Application Security Risks
+- **SQL**: MySQL Performance Optimization Guide
+- **Algorithms**: "Introduction to Algorithms" - K-Means chapter
+- **Data Viz**: Chart.js official documentation
+- **Business**: "Competing on Analytics" by Davenport & Harris
+
+### Tools to Install
+
+- XAMPP (provided)
+- MySQL Workbench (for ERD design)
+- Postman (for API testing in Part 7)
+- PHPUnit (for unit testing in Part 8)
+- Git (for version control)
+
+### Sample Data
+
+Students should use the existing customer data in the database. If you need to generate additional test data:
+
+```sql
+-- Generate 1000 random customers for scalability testing
+INSERT INTO customers (age, gender, income, purchase_amount, region)
+SELECT
+    FLOOR(18 + RAND() * 65) AS age,
+    IF(RAND() > 0.5, 'Male', 'Female') AS gender,
+    FLOOR(20000 + RAND() * 100000) AS income,
+    FLOOR(500 + RAND() * 5000) AS purchase_amount,
+    ELT(FLOOR(1 + RAND() * 5), 'North', 'South', 'East', 'West', 'Central') AS region
+FROM
+    (SELECT 1 UNION SELECT 2 UNION SELECT 3 UNION SELECT 4 UNION SELECT 5) t1,
+    (SELECT 1 UNION SELECT 2 UNION SELECT 3 UNION SELECT 4 UNION SELECT 5) t2,
+    (SELECT 1 UNION SELECT 2 UNION SELECT 3 UNION SELECT 4 UNION SELECT 5) t3,
+    (SELECT 1 UNION SELECT 2 UNION SELECT 3 UNION SELECT 4 UNION SELECT 5) t4;
+```
+
+**Good luck, and happy coding!**
