@@ -69,10 +69,7 @@ ISO/IEC 25010 provides a framework for evaluating software quality characteristi
    - Make the website responsive and functional across Chrome, Firefox, Safari, and Edge (latest two versions) (NFR-10).
    - Ensure the mobile interface works on iOS 14+ and Android 10+ (NFR-11).
 
-6. **Maintainability**
-   - Follow modular design principles and document APIs for future feature additions (NFR-12).
-
-7. **Scalability**
+6. **Scalability**
    - Design the architecture to support adding new product categories without code changes (NFR-13).
 
 ---
@@ -88,7 +85,7 @@ ISO/IEC 25010 provides a framework for evaluating software quality characteristi
 
 
 3. **Database**
-   - Use a relational database (e.g., PostgreSQL) to store user data, books, and orders.
+   - Use a relational database (e.g., PostgreSQL, MYSQL) to store user data, books, and orders.
    - Normalize the database schema to reduce redundancy.
 
 4. **Hosting**
@@ -98,7 +95,7 @@ ISO/IEC 25010 provides a framework for evaluating software quality characteristi
 
 ## **Step 5: Prototype and Test**
 1. **Prototype**
-   - Build a minimum viable product (MVP) that includes core functionalities such as user registration, book browsing, and order placement.
+   - Build a MLP (Minimum Lovable Product) that includes core functionalities such as user registration, book browsing, and order placement.
 
 2. **Testing**
    - Perform unit testing, integration testing, and end-to-end testing.
